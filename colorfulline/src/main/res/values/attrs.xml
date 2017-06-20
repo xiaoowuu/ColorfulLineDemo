@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ColorfulLine">
+        <attr name="colors" format="string" />
+        <attr name="colorSizes" format="string" />
+        <attr name="colorSizeUnit" format="enum">
+            <enum name="px" value="1" />
+            <enum name="dp" value="2" />
+        </attr>
+        <attr name="direction" format="enum">
+            <enum name="horizontal" value="1" />
+            <enum name="vertical" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>
