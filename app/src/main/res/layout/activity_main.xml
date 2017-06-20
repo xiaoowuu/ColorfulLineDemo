@@ -1,18 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="win.smartown.android.colorfullinedemo.MainActivity">
 
-    <win.smartown.android.colorfulline.ColorfulLine
-        android:layout_width="2dp"
-        android:layout_height="match_parent"
-        android:layout_centerInParent="true"
-        app:colorSizeUnit="dp"
-        app:colorSizes="16,8"
-        app:colors="#000000,#00000000"
-        app:direction="vertical" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-</RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vertical_code_1" />
+
+            <win.smartown.android.colorfulline.ColorfulLine
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                app:colorSizeUnit="dp"
+                app:colorSizes="16,8"
+                app:colors="#000000,#00000000"
+                app:direction="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/vertical_code_2" />
+
+            <win.smartown.android.colorfulline.ColorfulLine
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                app:colorSizeUnit="px"
+                app:colorSizes="16,16"
+                app:colors="#c0e0a0,#30d0c0"
+                app:direction="horizontal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/vertical_code_3" />
+
+            <win.smartown.android.colorfulline.ColorfulLine
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                app:colorSizeUnit="dp"
+                app:colorSizes="16,16,16"
+                app:colors="#ff7200,#72ff00,#0072ff"
+                app:direction="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <win.smartown.android.colorfulline.ColorfulLine
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        app:colorSizeUnit="px"
+                        app:colorSizes="16,16"
+                        app:colors="#c0e0a0,#30d0c0"
+                        app:direction="vertical" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vertical_code_4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

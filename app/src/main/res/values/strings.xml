@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ColorfulLineDemo</string>
+
+    <string name="vertical_code_1">app:colorSizeUnit="dp"\napp:colorSizes="16,8"\napp:colors="#000000,#00000000"\napp:direction="horizontal"</string>
+    <string name="vertical_code_2">app:colorSizeUnit="px"\napp:colorSizes="16,16"\napp:colors="#c0e0a0,#30d0c0"\napp:direction="horizontal"</string>
+    <string name="vertical_code_3">app:colorSizeUnit="dp"\napp:colorSizes="16,16,16"\napp:colors="#ff7200,#72ff00,#0072ff"\napp:direction="horizontal"</string>
+    <string name="vertical_code_4">app:colorSizeUnit="px"\napp:colorSizes="16,16"\napp:colors="#c0e0a0,#30d0c0"\napp:direction="vertical"</string>
+
 </resources>
